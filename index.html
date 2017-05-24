@@ -1,0 +1,242 @@
+<?php session_start();?>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewpoint" content="width=device-width">
+  <title>Deli Foods</title>
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <!--Google Analytics-->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-99846918-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+</head>
+<header>
+  <nav class="navbar navbar-default" id="nav_full" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navv">
+            <span class="sr-only">Show and Hide the Navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navv">
+            <ul class="nav navbar-nav">
+                <li><a href="#" id="menu_item">Contacts</a></li>
+                <li><a href="#" id="menu_item">Events</a></li>
+                <li><a href="#" id="menu_item">Menu</a></li>
+            </ul>
+        </div>
+     
+    </div>
+  </nav>
+  <div id="tp">
+    <img src="assets/logoBig.png">
+    <p><span class="title">We Provide The Best Food</p></span>
+      <p>At The <span class="highlight">Right Price</span></p>
+  </div>
+</header>
+
+<body>
+  <div class="container-fluid">
+
+    <div class="row">
+      <div class="happy_hour col-md-3">
+        <div class="row1" data-toggle="modal" data-target="#happyHour">
+          <p>Happy Hour</p>
+        </div>
+        <div class="party row2" data-toggle="modal" data-target="#partyTime">
+          <p>Party time</p>
+        </div>
+      </div>
+
+      <div class="breakfast col-md-3">
+          <p class="textt">Breakfast</p>
+      </div>
+
+      <div class="lunch col-md-3">
+        <p>Lunch</p>
+      </div>
+
+      <div class="dinner col-md-3">
+        <p>Dinner</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row fast">
+      <div class="col-md-6 picture">
+        <div class="row one">
+          <img src="assets/fastFood1.jpg">
+        </div>
+
+        <div class="row two">
+          <img src="assets/fastFood2.jpg">
+        </div>
+      </div>
+
+      <div class="col-md-6 text">
+        <h3>Fast Food</h3>
+        <h4>Enjoy our delicious food</h4>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+          It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with
+          desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+        <button class="btn btn-food" id="view">More Options</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row drinks">
+      <div class="col-md-6 words">
+        <h5>Drinks</h5>
+        <h6>Enjoy our amazing drinks</h6>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+          It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with
+          desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+        <button class="btn btn-drinks" id="view">More Options</button>
+      </div>
+
+      <div class="col-md-6 picture">
+        <div class="col-md-4 drink1">
+          <img src="assets/drink1.jpg">
+        </div>
+
+        <div class="col-md-2 drink2">
+          <img src="assets/drink2.jpg">
+        </div>
+      </div>
+    </div>
+
+    <div class="continer-fluid">
+      <div class="out">
+        <div class="picture3">
+          <div class="table">
+            <td>
+              <tr>Fast Food</tr>
+              <tr>Drinks</tr>
+              <tr>Chicken</tr>
+              <tr>Rice</tr>
+            </td>
+          </div>
+
+          <div class="row">
+            <div class="col-md-4">
+              <img src="assets/fastfood/beefBurger.jpg">
+              <p>Chicken Burger</p>
+            </div>
+            <div class="col-md-4">
+              <img src="assets/fastfood/chickenBurger.jpg">
+              <p>Beef Burger</p>
+            </div>
+            <div class="col-md-4">
+              <img src="assets/fastfood/chickenPizza.jpg">
+              <p>Chicken Pizza</p>
+            </div>
+          </div>
+          <div id="lists">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="customers">
+        <div class="row customer">
+          <div class="col-md-5 cust">
+            <h9>Our happy customers</h9>
+            <p>Henry Adams</p>
+            <p>Great shgjhgjhd klhsgkygjksdh jkshdjkghdkj hfskjfhkjsdnmbjkfsdkghjk jkhsgkjhgjks jhsfjkhgskjhds  jahfssh</p>
+            <img src="assets/customers/p1.png">
+            <img src="assets/customers/p2.png">
+            <img src="assets/customers/p3.png">
+          </div>
+
+          <div class="col-md-4 handle">
+            <h9>About Menu</h9>
+            <p>We delicious jkgsd the best. We delicious jkgsd the best We delicious jkgsd the best We delicious jkgsd the best We delicious jkgsd the Best We delicious jkgsd the best</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="subscribe">
+        <?php
+          if(isset($_SESSION['msg'])){
+              echo $_SESSION['msg'];
+          }
+        ?>
+        <p>To get food offers or menu updates, subscribe</p>
+        <form action="mail.php" method="post">
+            <input type="email" name="email" placeholder="your email">
+            <button type="submit" name="submit" class="button1">Subscribe</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="footer">
+        <img src="assets/footerlogos/logo_white.png">
+        <h8>MENU</h8>
+        <p>Serving quality food</p>
+        <img src="assets/footerlogos/facebook.png">
+        <img src="assets/footerlogos/twitter.png">
+        <img src="assets/footerlogos/pinterest.png">
+        <p>Copyright <span class="year">2017</span></p>
+      </div>
+<!--Modals-->
+      <div class="modal fade" id="happyHour">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Happy Hour</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>Walk in at between 1pm to 2pm and enjoy happy hour offers</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+      </div>
+       <div class="modal fade" id="partyTime">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Party Time</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>Come in after 4pm and enjoy party time offers</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <script src="js/jquery-3.2.1.js"></script>
+      <script src="js/scripts.js"></script>
+      <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
